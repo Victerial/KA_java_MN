@@ -7,17 +7,15 @@ public class ConditionalVariableMutation {
 
         System.out.println("Please enter an integer: ");
         int a =scan.nextInt();
-        scan.close();
+        
 
         if(a%2==0)
         {
             System.out.println(a+1);
         }
 
-        Scanner scan2 = new Scanner(System.in);
-
         System.out.println("Please enter an integer between 0 and 30.");
-        int b=scan2.nextInt();
+        int b=scan.nextInt();
         if(10<b && b<20)
         {
             System.out.println("Sweet");
@@ -29,5 +27,9 @@ public class ConditionalVariableMutation {
         else{
             System.out.println("More");
         }
+        
+
+
+        scan.close();
     }
 }
