@@ -28,7 +28,38 @@ public class ConditionalVariableMutation {
             System.out.println("More");
         }
         
+        System.out.println("Please enter an integer between 0 and 100.");
+        int c =scan.nextInt();
+        System.out.println("Please enter true or false.");
+        boolean isBonus = scan.nextBoolean();
 
+        if(c>50 && isBonus==false)
+        {
+            System.out.println(c-2);
+        }
+        else if(c<50 && isBonus==false)
+        {
+            System.out.println(c-1);
+        }
+        if(isBonus==true)
+        {
+            System.out.println(c);
+        }
+
+        System.out.println("Please enter  an integer between 0 and 50");
+        int d =scan.nextInt();
+        System.out.println("Please enter  an integer between 0 and 500");
+        int time =scan.nextInt();
+
+        if(d%4==0 && time<200){
+            System.out.println("Check");
+        }
+        else if(time>200){
+            System.out.println("Time out");
+        }
+        else{
+            System.out.println("Run Forest Run!");
+        }
 
         scan.close();
     }
