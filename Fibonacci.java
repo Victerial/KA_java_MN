@@ -7,6 +7,11 @@ public class Fibonacci {
         Scanner scan = new Scanner(System.in);
         System.out.println("Adja meg a sorozat hosszát:");
         int length = scan.nextInt();
+        while(length<=0)
+        {
+            System.out.println("A sorozat hossza nem lehet 0 vagy negatív, adjon meg egy új hosszúságot:");
+            length = scan.nextInt();
+        }
 
         System.out.println("A fibonacci sorozat:");
         for(int i=0; i<length;i++){
